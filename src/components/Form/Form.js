@@ -55,7 +55,7 @@ export default function ContactForm() {
   return (
     <form className={s.form} onSubmit={handleSubmut}>
       <label className={s.label}>
-        Name
+        Імʼя
         <input
           autoComplete="off"
           className={s.input}
@@ -69,7 +69,7 @@ export default function ContactForm() {
         />
       </label>
       <label className={s.label}>
-        Number
+        Номер
         <input
           autoComplete="off"
           className={s.input}
@@ -83,7 +83,7 @@ export default function ContactForm() {
         />
       </label>
       <button className={s.submit} type="submit">
-        Add contact
+        Додати контакт
       </button>
     </form>
   );

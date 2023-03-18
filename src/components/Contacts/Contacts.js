@@ -38,7 +38,7 @@ const Contacts = () => {
               type="button"
               onClick={e => deleteContact(id)}
             >
-              X
+              Видалити
             </button>
           </li>
         ))}
