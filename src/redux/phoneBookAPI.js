@@ -2,35 +2,35 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const phoneBookAPI = createApi({
   reducerPath: 'phoneBookAPI',
-  tagTypes: ['contacts'],
+  tagTypes: ['contact'],
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://62d55684d4406e523558921b.mockapi.io/',
+    baseUrl: 'https://64137b66c469cff60d643c19.mockapi.io/',
   }),
   endpoints: build => ({
     getContacts: build.query({
-      query: () => 'contacts',
+      query: () => 'contact',
       providesTags: result =>
         result
           ? [
-              ...result.map(({ id }) => ({ type: 'contacts', id })),
-              { type: 'contacts', id: 'LIST' },
+              ...result.map(({ id }) => ({ type: 'contact', id })),
+              { type: 'contact', id: 'LIST' },
             ]
-          : [{ type: 'contacts', id: 'LIST' }],
+          : [{ type: 'contact', id: 'LIST' }],
     }),
     addContact: build.mutation({
       query: body => ({
-        url: 'contacts',
+        url: 'contact',
         method: 'POST',
         body,
       }),
-      invalidatesTags: [{ type: 'contacts', id: 'LIST' }],
+      invalidatesTags: [{ type: 'contact', id: 'LIST' }],
     }),
     deleteContact: build.mutation({
       query: id => ({
-        url: `contacts/${id}`,
+        url: `contact/${id}`,
         method: 'DELETE',
       }),
-      invalidatesTags: [{ type: 'contacts', id: 'LIST' }],
+      invalidatesTags: [{ type: 'contact', id: 'LIST' }],
     }),
   }),
 });
