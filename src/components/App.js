@@ -5,11 +5,14 @@ import Filter from './Filter/Filter';
 function App() {
   return (
     <>
-      <h1 className="primary-title">ТелефонBook</h1>
+      
+      <h1 className="primary-title" >ТелефонBook</h1>
       <Form />
       <Filter />
       <Contacts />
+    
     </>
+      
   );
 }
 

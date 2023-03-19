@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+
 
 /*body {
   padding: 20px 40px;
@@ -45,6 +45,10 @@ button {
 img {
   display: block;
 }
+h1{
+  color: black;
+}
+
 
 .primary-title {
   margin-bottom: 20px;

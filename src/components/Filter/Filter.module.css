@@ -1,9 +1,5 @@
 .label {
-  /*width: 30vw;
-  display: flex;
-  margin: 0 auto 40px;
-  flex-direction: column;
-  font-size: 20px;*/
+ 
   width: 300 px;
     display: flex;
     flex-direction: column;
@@ -20,6 +16,7 @@
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
 }
 
 .input:focus {
