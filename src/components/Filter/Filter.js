@@ -7,7 +7,7 @@ const Filter = () => {
 
   return (
     <label className={s.label}>
-      Find contacts by name
+      Знайти контакт за іменем
       <input
         className={s.input}
         type="text"
