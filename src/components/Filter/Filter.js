@@ -7,10 +7,11 @@ const Filter = () => {
 
   return (
     <label className={s.label}>
-      Знайти контакт за іменем
+      
       <input
         className={s.input}
         type="text"
+        placeholder="Знайти контакт за іменем" 
         name="filter"
         onChange={e => dispatch(filterContacts(e.target.value.toLowerCase()))}
       />

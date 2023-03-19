@@ -1,22 +1,25 @@
 .label {
-  width: 30vw;
+  /*width: 30vw;
   display: flex;
   margin: 0 auto 40px;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 20px;*/
+  width: 300 px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-bottom: 30px;
   color: #2c2020bc;
 }
 
 .input {
-  font: inherit;
-  margin-bottom: 15px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #fff;
-  outline: none;
-  padding-block: 5px;
-  transition: border-color 250ms;
-  color: inherit;
+  
+  padding: 5px;
+    height: 40px;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .input:focus {
