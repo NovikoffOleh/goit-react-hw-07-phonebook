@@ -55,11 +55,12 @@ export default function ContactForm() {
   return (
     <form className={s.form} onSubmit={handleSubmut}>
       <label className={s.label}>
-        Імʼя
+        
         <input
           autoComplete="off"
           className={s.input}
           type="text"
+           placeholder="Імʼя"
           value={name}
           name="name"
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -69,13 +70,14 @@ export default function ContactForm() {
         />
       </label>
       <label className={s.label}>
-        Номер
+        
         <input
           autoComplete="off"
           className={s.input}
           value={number}
           onChange={handleInputChange}
           type="tel"
+          placeholder="Номер" 
           name="number"
           pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
